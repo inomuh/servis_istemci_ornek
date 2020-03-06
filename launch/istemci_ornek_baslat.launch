@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<node pkg="servis_istemci_ornek" type="istemci_ornek_dugumu.py" name="istemci_ornek_dugumu" output="screen" />
+	
+</launch>

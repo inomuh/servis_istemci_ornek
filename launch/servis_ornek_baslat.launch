@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<node pkg="servis_istemci_ornek" type="servis_ornek_dugumu.py" name="servis_ornek_dugumu" output="screen" >
+		<rosparam file="$(find servis_istemci_ornek)/params/servis_parametreleri.yaml" command="load"/>
+	</node>
+	
+</launch>
