@@ -6,7 +6,7 @@ from std_srvs.srv import *
 import random
 
 
-class TemizlikRobotuServisOrnek(object):
+class ServisOrnek(object):
     def __init__(self):
         self.ana_fonksiyon()
 
@@ -42,10 +42,10 @@ class TemizlikRobotuServisOrnek(object):
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('temizlik_robotu_servis_ornek_dugumu', anonymous=True)
+        rospy.init_node('servis_ornek_dugumu', anonymous=True)
 
-        # TemizlikRobotuServisOrnek() sınıfını çağırmaktadır.
-        dugum = TemizlikRobotuServisOrnek()
+        # ServisOrnek() sınıfını çağırmaktadır.
+        dugum = ServisOrnek()
 
     except rospy.ROSInterruptException:
         pass

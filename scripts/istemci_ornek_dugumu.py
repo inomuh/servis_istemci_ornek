@@ -5,7 +5,7 @@ import rospy
 from std_srvs.srv import *
 
 
-class TemizlikRobotuIstemciOrnek(object):
+class IstemciOrnek(object):
     def __init__(self):
         self.ana_fonksiyon()
 
@@ -35,10 +35,10 @@ class TemizlikRobotuIstemciOrnek(object):
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('temizlik_robotu_istemci_ornek_dugumu', anonymous=True)
+        rospy.init_node('istemci_ornek_dugumu', anonymous=True)
 
-        # TemizlikRobotuIstemciOrnek() sınıfını çağırmaktadır.
-        dugum = TemizlikRobotuIstemciOrnek()
+        # IstemciOrnek() sınıfını çağırmaktadır.
+        dugum = IstemciOrnek()
 
     except rospy.ROSInterruptException:
         pass
